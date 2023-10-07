@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main>
+        <h1 class="text-5xl text-center bg-blue-200 p-5">Get Your <span class="text-red-900">Discount</span> by coupon!!</h1>
+        <div class="flex justify-center">
+            <div class="p-5 w-9/12 bg-red-100 text-center gap-5">
+                <div class="py-2">
+                    <h2 class="inline">Price:</h2>
+                    <input id="regular-price" class="border-2 border-blue-200 rounded" type="text" placeholder="Enter your price"> 
+                    <div class="py-2">
+                        <h2 class="inline">Enter coupon:</h2>
+                        <input id="coupon" class="border-2 border-blue-200 rounded" type="text" placeholder="Enter the coupon"> 
+                    </div>
+                </div><br>
+                <button id="btn-apply" class="hover:bg-green-600 bg-green-400 px-3 py-2 rounded text-red">Apply 30%</button>
+                <div class="py-7">
+                    <h2 class="inline">Please Pay:</h2>
+                    <h2 class="inline"><span id="discount-price" class="text-red-900"></span> Taka</h2>
+                    <p class="text-slate-400 text-right">Sample Coupon: DISC30</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/hardScript.js"></script>
+</body>
+</html>
