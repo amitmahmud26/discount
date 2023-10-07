@@ -23,4 +23,6 @@ document.getElementById("btn-apply").addEventListener('click', function(){
         const discountPrice = (regularPrice - regularPrice*0.3).toFixed(2);
         setTextElement("discount-price", discountPrice);
     }
+    else
+        alert("Please enter a valid coupon");
 });
